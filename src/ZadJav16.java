@@ -1,3 +1,4 @@
+import java.util.Arrays;
 import java.util.Random;
 
 public class ZadJav16 {
@@ -8,11 +9,11 @@ public class ZadJav16 {
 
         for (int i = 0; i < tab.length; i++) {
             tab[i] = rand.nextInt(100);
-            System.out.print(tab[i] + " ");
         }
 
-        for (int i = tab.length - 1; i >= 0; i--) {
-            System.out.print(tab[i] + " ");
+        System.out.print(Arrays.toString(tab));
+        for (int j = tab.length-1; j >=0 ; j--) {
+            System.out.print(" "+tab[j]);
         }
     }
 }
